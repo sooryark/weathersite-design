@@ -26,7 +26,7 @@ const Chartbox = () => {
 
   useEffect(()=>{
     setWeather(mockWeatherData)
-  })
+  },[])
 
   const chartData = {
     labels:weather.map((date)=>date.temp),

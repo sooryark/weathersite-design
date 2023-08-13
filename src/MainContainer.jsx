@@ -20,7 +20,7 @@ const MainContainer = ()=>{
                 <div>
                  <div className="personicon">
                     <MoreHorizIcon/>
-                    <img src={personimage} alt="person image" id="personimg"/>
+                    <img src={personimage} alt="person" id="personimg"/>
                  </div>
                 </div>
                 
