@@ -1,0 +1,416 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  width:100%;
+  height:100vh;
+  font-family: 'Nunito', sans-serif;
+}
+.sidebar{
+  width:30%;
+  height:100vh;
+  background-color:rgb(92,156,229);
+  color:white;
+  text-align: center;
+  position: relative;
+}
+.mainbtn{
+  width:40px;
+  height:10px;
+  background-color:rgb(255,255,255);
+  border-radius: 10px;
+}
+.circle{
+  width:10px;
+  height:10px;
+  background-color: rgb(255,255,255);
+  border-radius: 50%;
+}
+.box1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+}
+.icons{
+  display: flex;
+  gap:5px;
+}
+.btnel{
+  display: flex;
+  gap:5px;
+}
+.addbtn{
+  font-size: 30px;
+  color:rgb(255,255,255);
+  border-radius: 5px;
+}
+.btnbox{
+  width:60px;
+  height:20px;
+  background-color: rgb(220,220,220);
+  border-radius: 20px;
+}
+.btn{
+  width:20px;
+  height:20px;
+  padding: 10px;
+  background-color: rgb(255,255,255);
+  border-radius: 50%;
+}
+.box2{
+  padding-top:30px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+}
+.sunrise{
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+.sunset{
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+.celsius{
+  font-size: 85px;
+}
+.box3{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.arrow{
+  font-size: 28px;
+}
+.image{
+ background-image: url("images/banner.png");
+ width:100%;
+ height:400px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ position: absolute;
+ bottom: 0px;
+ left:-50px;
+}
+.maincontainer{
+  width:70%;
+  height:100vh;   
+  background-color: rgb(228,241,255);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.mainpage{
+  display: flex;
+  background-color: rgb(92,156,229);
+}
+#personimg{
+  width:40px;
+  height:40px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.navbar{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.personicon{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.chartbox{
+  background-color:rgb(255,255,255);
+  width:90%;
+  height:300px;
+  border-radius:20px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column; 
+}
+.graph{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  height:180px;
+}
+.time{
+  display:flex;
+  gap:20px;
+  font-size: 12px;
+}
+.graphnav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.graphbtn{
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(241,241,241);
+  border-radius: 20px;
+  color:gray;
+  font-size: 12px;
+}
+.graphbtnnext{
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color:rgb(241,241,241);
+  border-radius: 20px;
+  color:black;
+  font-size: 12px;
+}
+.card{
+  background-color: rgb(255,255,255);
+  width:250px;
+  height:140px;
+  border-radius: 20px;
+  padding: 5px;
+}
+.weathericon{
+  color: white;
+  background-color: rgb(92,156,229);
+  padding: 5px;
+  border-radius: 10px;
+}
+.range{
+  width:50px;
+  height:8px;
+  background-color: rgb(92,156,229);
+  border-radius: 10px;
+}
+.rangeel{
+  width: 50px;
+  height:8px;
+  background-color:rgb(220,220,220);
+  border-radius: 10px;
+}
+.fill{
+  width:30px;
+  height:8px;
+  background-color: rgb(92,156,229);
+}
+.weatherdata{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.airrangebox{
+  margin: 0 auto;
+  width:130px;
+  height:115px;
+  border: 13px dashed rgb(92,156,229);
+  border-radius: 50%;
+  background: transparent;
+  border-bottom-color: transparent;
+  text-align: center;
+  line-height: 120px;
+  font-weight: bold;
+  font-size: 22px;
+  position: relative;
+}
+.arrow{
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  width:5px;
+  height:20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: rgb(92,156,229);
+  transform: rotate(320deg);
+  transform-origin: bottom;
+}
+.dot{
+  position: absolute;
+  left: 55%;
+  bottom: 40%;
+  width:5px;
+  height:5px;
+  border-radius: 50%;
+  background-color: rgb(92,156,229);
+  transform: translate(-50%,-50%);
+}
+.speed1{
+  position: absolute;
+  left:-20px;
+  bottom: -40px;
+  color:gray;
+  font-size: 12px;
+}
+.speed2{
+  position: absolute;
+  bottom: 0px;
+  left: -25px;
+  color:gray;
+  font-size: 12px;
+}
+.speed3{
+  position: absolute;
+  bottom: 40px;
+  left: -5px;
+  color:gray;
+  font-size: 12px;
+}
+.speed4{
+  position: absolute;
+  bottom: 50px;
+  left: 45px;
+  color:gray;
+  font-size: 12px;
+}
+.speed5{
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  color:gray;
+  font-size: 12px;
+}
+.speed6{
+  position: absolute;
+  bottom: -10px;
+  left: 120px;
+  color:gray;
+  font-size: 12px;
+}
+.weathercards{
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:10px;
+}
+.rainbox{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  gap:3px;
+}
+.rainbox p{
+  font-size: 12px;
+}
+.rainrange{
+  width:15px;
+  height:5px;
+  background-color: rgb(220,220,220);
+  border-radius: 20px;
+}
+.rainrange1{
+  width:15px;
+  height:5px;
+background-color: rgb(92,156,229);
+border-radius: 20px;
+}
+.rainrange2{
+background-color: rgb(92,156,229);
+width:15px;
+height:5px;
+border-radius: 20px;
+}
+.uvindexbox{
+  display: flex;
+  justify-content: center;
+  gap:3px;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.uvindex1{
+  width:40px;
+  height:5px;
+  background-color:rgb(92,156,229);
+  border-radius: 20px;
+}
+.uvindex2{
+  width:40px;
+  height:5px;
+  background-color:rgb(92,156,229);
+  border-radius: 20px;
+}
+.uvindex{
+  width:40px;
+  height:5px;
+  background-color:rgb(220,220,220);
+  border-radius: 20px;
+}
+.temprange{
+  margin: 0 auto;
+  width:150px;
+  height:5px;
+  background-color: rgb(92,156,229);
+  border-radius: 20px;
+  position:relative;
+  font-size: 12px;
+}
+.temp1{
+  position:absolute;
+  top:-20px;
+  color:gray;
+}
+.temp2{
+  position:absolute;
+  top:-20px;
+  left:60px;
+  color:gray;
+}
+.temp3{
+  position:absolute;
+  top:-20px;
+  left:130px;
+  color:gray;
+}
+.rainlevel{
+  margin: 0 auto;
+  width:150px;
+  height:5px;
+  background-color: rgb(92,156,229);
+  border-radius: 20px;
+  position:relative;
+  font-size: 12px; 
+}
+.level{
+  position:absolute;
+  top:-20px;
+  color:gray;
+}
+.level1{
+  position:absolute;
+  top:-20px;
+  left:28px;
+  color:gray;
+}
+.level2{
+  position:absolute;
+  top:-20px;
+  left:60px;
+  color:gray;
+}
+.level3{
+  position:absolute;
+  top:-20px;
+  left:95px;
+  color:gray;
+}
+.level4{
+  position:absolute;
+  top:-20px;
+  left:130px;
+  color:gray;
+}
