@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS,Title,Tooltip,LineElement,Legend,CategoryScale,LinearScale,PointElement,Filler } from "chart.js";
 import FilterDramaIcon from '@mui/icons-material/FilterDrama';
@@ -10,9 +10,7 @@ ChartJS.register(
 
 const Chartbox = () => {
 
-  const [weather, setWeather] = useState([]);
 
-  
   const mockWeatherData = [
     {per:"23%",temp:27},
     {per:"29%",temp:28},
@@ -24,16 +22,14 @@ const Chartbox = () => {
     {per:"49%",temp:28},
   ];
 
-  useEffect(()=>{
-    setWeather(mockWeatherData)
-  },[mockWeatherData])
+
 
   const chartData = {
-    labels:weather.map((date)=>date.temp),
+    labels:mockWeatherData.map((date)=>date.temp),
     datasets: [
       {
         label:'Temperature (°C) at Time',
-        data: weather.map((temp)=>temp.temp),
+        data: mockWeatherData.map((temp)=>temp.temp),
         borderColor: 'rgb(92,156,229)',
         backgroundColor: 'rgb(92,156,229)',
         borderWidth: 1,
